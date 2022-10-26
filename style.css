@@ -7,52 +7,196 @@
 .container {
   width: 100%;
   height: 100vh;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(137, 221, 224, 1) 100%
+  );
 }
 
-.background {
-  width: 100%;
-  height: 100%;
-  background-color: #bdd8fe;
-}
+/*sun-container*/
 
-.nature {
+/*.sun-container {
+  width: 20%;
+  height: 40%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background-color: green;
-  width: 100%;
-  min-height: 50%;
-  top: 80%;
-  z-index: 1;
+  top: 20%;
 }
 
-.mountain-1 {
+.sun-container > .circle-sun {
+  width: 70%;
+  height: 70%;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.sun-container > .ray {
+  width: 100%;
+  height: 6px;
+  background-color: yellow;
+  position: absolute;
+}
+
+.sun-container > .ray1 {
+  transform: rotate(90deg);
+}
+
+.sun-container > .ray2 {
+  transform: rotate(130deg);
+}
+
+.sun-container > .ray3 {
+  transform: rotate(50deg);
+}*/
+
+/*montains*/
+
+.montains {
+  width: 100%;
+  height: 45%;
+  border: 1px solid red;
+  display: flex;
+  position: relative;
+  top: 55%;
+  /*align-content: space-around;*/
+}
+
+/*group montain1*/
+
+.group-montain1 {
+  width: 35%;
+  height: 100%;
+  border: 1px solid blue;
+  position: absolute;
+  z-index: 1;
+
+  background: rgb(165, 242, 187);
+  background: linear-gradient(
+    0deg,
+    rgba(165, 242, 187, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.group-montain1 > .montain1 {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: column;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 50% 100% 30% 0 / 50% 100% 50% 0;
   position: absolute;
   z-index: 2;
-  width: 35%;
-  height: 35%;
-  border-radius: 45% 100% 0 0 / 100% 100% 0 0;
-  background: green;
-  bottom: 87%;
-  left: 5%;
 }
 
-.half-moon {
+.group-montain1 > .montain2 {
+  width: 95%;
+  height: 85%;
+  display: flex;
+  justify-content: column;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  clip-path: ellipse(74% 48% at 16% 50%);
+  /*clip-path: polygon(0 0, 100% 0, 100% 200px, 0 100%);*/
   position: absolute;
   z-index: 3;
-  width: 31%;
-  height: 30%;
-  border-radius: 50%;
-  box-shadow: 35px 30px 0 green;
-  left: 35%;
-  top: -32%;
+  top: 5%;
 }
 
-.mountain-2 {
+.group-montain1 > .montain3 {
+  width: 35%;
+  height: 35%;
+  display: flex;
+  justify-content: column;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 0 100% 0 0;
   position: absolute;
   z-index: 4;
+  top: 65%;
+}
+
+/*group montain2*/
+
+.group-montain2 {
   width: 35%;
-  height: 50%;
-  border-radius: 60% 40% 0 0 / 100% 100% 0 0;
-  background: green;
-  bottom: 82%;
-  right: 5%;
+  height: 100%;
+  border: 1px solid blue;
+  position: absolute;
+  z-index: 1;
+  left: 65%;
+  background: rgb(165, 242, 187);
+  background: linear-gradient(
+    0deg,
+    rgba(165, 242, 187, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.group-montain2 > .montain4 {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: column;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 50% 100% 30% 0 / 50% 100% 50% 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.group-montain2 > .montain5 {
+  width: 95%;
+  height: 85%;
+  display: flex;
+  justify-content: column;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  clip-path: ellipse(74% 48% at 16% 50%);
+  position: absolute;
+  z-index: 3;
+  top: 5%;
+}
+
+.group-montain2 > .montain6 {
+  width: 35%;
+  height: 35%;
+  display: flex;
+  justify-content: column;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 0 100% 0 0;
+  position: absolute;
+  z-index: 4;
+  top: 65%;
 }
