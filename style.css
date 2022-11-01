@@ -15,20 +15,199 @@
   );
 }
 
-/*sun-container*/
+/*------------ montains -------------*/
 
-/*.sun-container {
-  width: 20%;
-  height: 40%;
+.montains {
+  width: 100%;
+  height: 45%;
   border: 1px solid red;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  top: 20%;
+  top: 55%;
+  /*align-content: space-around;*/
 }
 
-.sun-container > .circle-sun {
+/*-------- group montain1 --------*/
+
+.group-montain1 {
+  width: 40%;
+  height: 100%;
+  background: rgb(165, 242, 187);
+  background: linear-gradient(
+    0deg,
+    rgba(165, 242, 187, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: absolute;
+  z-index: 1;
+}
+
+.group-montain1 > .montain1 {
+  width: 95%;
+  height: 15%;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 50% 100% 30% 0 / 50% 100% 50% 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.group-montain1 > .montain2 {
+  width: 95%;
+  height: 85%;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  clip-path: ellipse(74% 48% at 16% 50%);
+  /*clip-path: polygon(0 0, 100% 0, 100% 200px, 0 100%);*/
+  position: absolute;
+  z-index: 3;
+  top: 5%;
+}
+
+.group-montain1 > .montain3 {
+  width: 35%;
+  height: 35%;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 0 100% 0 0;
+  position: absolute;
+  z-index: 4;
+  top: 65%;
+}
+
+/*------ group montain2 -------*/
+
+.group-montain2 {
+  width: 50%;
+  height: 100%;
+  background: rgb(165, 242, 187);
+  background: linear-gradient(
+    0deg,
+    rgba(165, 242, 187, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: relative;
+  left: 50%;
+  z-index: 1;
+}
+
+.group-montain2 > .montain4 {
+  width: 95%;
+  height: 60%;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 100% 0 0 100% / 100% 0 0 100%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.group-montain2 > .montain5 {
+  width: 50%;
+  height: 50%;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 100% 80% 0 100%;
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  right: 0;
+}
+
+.group-montain2 > .montain6 {
+  width: 55%;
+  height: 35%;
+  background: rgb(45, 253, 104);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 253, 104, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  /*border-radius: 0 100% 0 0;*/
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  z-index: 4;
+  top: 65%;
+  right: 0;
+}
+
+/*-------- River ---------*/
+
+.river {
+  width: 13%;
+  height: 100%;
+  position: relative;
+  left: -11%;
+  z-index: 4;
+  background: rgba(137, 221, 224, 1);
+}
+
+.river > .curve1 {
+  width: 20%;
+  height: 100%;
+  border-radius: 100% 0 0 100%;
+  background: rgb(165, 242, 187);
+  background: linear-gradient(
+    0deg,
+    rgba(165, 242, 187, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  left: 80%;
+  position: absolute;
+  z-index: 1;
+}
+
+.river > .curve2 {
+  width: 20%;
+  height: 100%;
+  border-radius: 0 100% 100% 0;
+  background: rgb(165, 242, 187);
+  background: linear-gradient(
+    0deg,
+    rgba(165, 242, 187, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: absolute;
+  z-index: 1;
+}
+
+/*------ sun-container --------*/
+
+.sun-container {
+  width: 20%;
+  height: 30%;
+  border: 1px solid black;
+  position: relative;
+  background-color: blue;
+  top: 10%;
+  left: 50%;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;*/
+}
+
+/*.sun-container > .circle-sun {
   width: 70%;
   height: 70%;
   background-color: yellow;
@@ -54,149 +233,34 @@
   transform: rotate(50deg);
 }*/
 
-/*montains*/
+/*noooooo*/
 
-.montains {
-  width: 100%;
-  height: 45%;
-  border: 1px solid red;
-  display: flex;
-  position: relative;
-  top: 55%;
-  /*align-content: space-around;*/
-}
-
-/*group montain1*/
-
-.group-montain1 {
-  width: 35%;
-  height: 100%;
-  border: 1px solid blue;
+/*.river > .curve2 {
+  width: 20%;
+  height: 109%;
+  border-radius: 50%;
+  box-shadow: 30px 50px 0 #d9534f;
+  transform: rotate(180deg);
+  left: 30%;
   position: absolute;
-  z-index: 1;
-
-  background: rgb(165, 242, 187);
-  background: linear-gradient(
-    0deg,
-    rgba(165, 242, 187, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-
-.group-montain1 > .montain1 {
-  width: 90%;
-  height: 15%;
-  display: flex;
-  justify-content: column;
-  background: rgb(45, 253, 104);
-  background: linear-gradient(
-    0deg,
-    rgba(45, 253, 104, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  border-radius: 50% 100% 30% 0 / 50% 100% 50% 0;
-  position: absolute;
+  top: -2%;
   z-index: 2;
-}
+}*/
 
-.group-montain1 > .montain2 {
-  width: 95%;
-  height: 85%;
-  display: flex;
-  justify-content: column;
-  background: rgb(45, 253, 104);
-  background: linear-gradient(
-    0deg,
-    rgba(45, 253, 104, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  clip-path: ellipse(74% 48% at 16% 50%);
-  /*clip-path: polygon(0 0, 100% 0, 100% 200px, 0 100%);*/
+/*.river > .frame {
+  width: 29%;
+  height: 100%;
+  background: palevioletred;
   position: absolute;
   z-index: 3;
-  top: 5%;
-}
+}*/
 
-.group-montain1 > .montain3 {
-  width: 35%;
-  height: 35%;
-  display: flex;
-  justify-content: column;
-  background: rgb(45, 253, 104);
-  background: linear-gradient(
-    0deg,
-    rgba(45, 253, 104, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  border-radius: 0 100% 0 0;
+/*.curve3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 30px 10px 0 #d9534f;
   position: absolute;
-  z-index: 4;
-  top: 65%;
+  top: 40%;
 }
-
-/*group montain2*/
-
-.group-montain2 {
-  width: 35%;
-  height: 100%;
-  border: 1px solid blue;
-  position: absolute;
-  z-index: 1;
-  left: 65%;
-  background: rgb(165, 242, 187);
-  background: linear-gradient(
-    0deg,
-    rgba(165, 242, 187, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-
-.group-montain2 > .montain4 {
-  width: 90%;
-  height: 15%;
-  display: flex;
-  justify-content: column;
-  background: rgb(45, 253, 104);
-  background: linear-gradient(
-    0deg,
-    rgba(45, 253, 104, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  border-radius: 50% 100% 30% 0 / 50% 100% 50% 0;
-  position: absolute;
-  z-index: 2;
-}
-
-.group-montain2 > .montain5 {
-  width: 95%;
-  height: 85%;
-  display: flex;
-  justify-content: column;
-  background: rgb(45, 253, 104);
-  background: linear-gradient(
-    0deg,
-    rgba(45, 253, 104, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  clip-path: ellipse(74% 48% at 16% 50%);
-  position: absolute;
-  z-index: 3;
-  top: 5%;
-}
-
-.group-montain2 > .montain6 {
-  width: 35%;
-  height: 35%;
-  display: flex;
-  justify-content: column;
-  background: rgb(45, 253, 104);
-  background: linear-gradient(
-    0deg,
-    rgba(45, 253, 104, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  border-radius: 0 100% 0 0;
-  position: absolute;
-  z-index: 4;
-  top: 65%;
-}
+*/
